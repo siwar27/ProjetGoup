@@ -1,0 +1,77 @@
+<%- include('./includes/header.ejs') %>
+        <section class="page2">
+            <div class="page">
+                <header class="head">
+                    <img class="image3" src="/img/icon-left-font.png" alt="png">
+                    <% if(locals.error) { %>
+                        <div class="alert alert-danger" role="alert">
+                            <%= error %>
+                        </div>
+                    <% } %>
+                    <% if(locals.success) { %>
+                        <div class="alert alert-success" role="alert">
+                            <%= success %>
+                        </div>
+                     <% } %>
+                      <div class="menu">
+                          <div><a href="/views/home.ejs" id="hom" class="fa fa-home"></a></div>
+                      
+                          <div class="dropdown"><a href="#"><img src="/img/femme.jpg" alt="Avatar" class="avatar1"/></a>
+                                <div class="dropdown-content">
+                                    <a href="/profil"><i class="fa fa-fw fa-user"></i> Profil </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="#">Déconnexion</a>
+                                </div>
+                          </div>
+                      </div>
+                  </header>
+            <br>
+            <div class="partie1">
+                <form action="/new" method="post" id="new">
+                    <div class="input-group mb-3">
+                        <!--<span class="input-group-text" id="inputGroup-sizing-default">Message</span> -->
+                        <input type="text" name="texte" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Mettre votre message" autofocus>
+                    </div>
+                
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label"></label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div>
+                        <input type="submit" value="Publier" id="Se-connecter"/><br>
+                    </div>
+                </form>
+            </div>
+            <br>
+                <div>
+                  <div class="mileu">
+                    <div class="MN">
+                        <a href=""><img src="/img/Images/c-est-quoi-une-belle-femme-temoignages (1).jpeg" alt="jpg" id="femme"></a>
+                        <div class="nom">
+                            <p> nom prenom</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    
+                    <br>
+                    <br>
+                    <div class="IM">
+                        <h6>Description</h6>
+                        <a href="post.html"><img  class="image1" src="/img/Images/salon_de_the.jpg" alt="jpg" id="salon"></a>
+                    </div>
+                    <br>
+                      <div class="ICO">
+                          <div><button onclick="clickCounter()" class="button" type="button"><i class="fa fa-thumbs-up" style="font-size:15px"><p>j'aime</p></i></button></div>
+                          <div id="result"></div>
+                          <div><button onclick="discounter()" class="button" type="button"><i class="fa fa-thumbs-down" style="font-size:15px"><p>je n'aime pas</p></i></button></div>
+                          <div id="result1"></div>
+                      </div>  
+                    <div class="pied">
+                    </div>
+                </div>
+                <br>
+                </div>
+            </div> 
+            </section>
+        </body>
+        </html>

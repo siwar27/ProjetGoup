@@ -1,0 +1,527 @@
+
+* {box-sizing: border-box;}
+
+#main {
+    width: 100%;
+    background-color:white;
+   /* display: flex;
+    flex-direction: column;
+    height: 100%;*/
+}
+
+/*.section{
+    background-color: darkred;
+}*/
+
+
+.image{
+    width:20%;
+    height: 80px;
+}
+
+
+.connexion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    width: 95%;
+    margin:3%;
+    box-shadow: 35px;
+    background-color: white;
+    border: solid 1px #aea0a0;
+    box-shadow: 15px 15px 10px #161414;
+    border-radius: 15px;
+}
+
+
+
+
+.for {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-self: center;
+    width: 90%;
+    margin: 3% 0 0 0;
+}
+
+input {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+#modifier{
+    margin: 3% 0 0 0;
+    width: 9%;
+    font-size: 15px;
+    align-self: flex-end;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    margin-left: 30px;
+   
+}
+
+.page {
+    width: 100%;
+}
+
+.ava {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.part1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+p {
+    font-family: 'robota';
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.xVrpc {
+    line-height: 25px;
+}
+
+.TqC_a {
+    display: inline-block;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+
+.rect1 {
+    width: 90%;
+    height: 100px;
+    border: grey solid;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #EBE9E9;
+}
+
+.partrois {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.pardeux {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.avatar1 {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.avatar2 {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+.rect2 {
+    width: 90%;
+    height: 800px;
+    border:grey solid;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    background: #EBE9E9;
+}
+
+
+.rect3 {
+    width: 55.5%;
+    height: 600px;
+    border: grey solid;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    background: #EBE9E9;
+}
+
+.aside {
+    width: 30%;
+    height: 300px;
+    border: grey solid;
+    flex-direction: column;
+    display: flex;
+    margin: 30px;
+   
+}
+
+
+.cadre {
+    display: flex;
+    flex-direction: column;
+}
+
+.mont {
+    width: 100%;
+    object-fit: cover;
+    height: 95%;
+    display: flex;
+}
+
+.pre-pied {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.ava{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.entete {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+
+._8-yf5 {
+  margin-right: 50px;
+}
+
+.smil {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 10px;
+}
+
+#coeur {
+    margin-right: 10px;
+    font-size: 30px;
+    color : black;
+    margin-right: 30px;
+}
+
+#coeur1 {
+    margin-right: 10px;
+    font-size: 16px;
+    color : black;
+    
+}
+
+
+#com { 
+    margin-right: 20px;
+    color:black;
+   
+}
+
+#mess {
+    color: black;
+}
+
+#mark {
+    color:black;
+}
+
+#point {
+    margin-right: 100px;
+}
+
+#mes {
+    margin-right: 30px ;
+    font-size: 30px;
+    color : black;
+}
+
+#hom {
+    margin-right: 30px;
+    font-size: 30px;
+    color: black
+}
+
+.sugg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.duo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+.sug {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.voir {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+   .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   }
+  
+    .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .page3 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #para {
+        font-size: 50px;
+        margin-left: 30px;
+    }
+
+    .MP {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .parti1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .parti2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+  /* .tab {
+        width: 30%;
+        
+    }*/
+
+    .tableau {
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: 40px;
+        border: black solid;
+        align-items: flex-start;
+    }
+
+    h2 {
+        margin-left: 40px;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .gallery {
+        width: 35%;
+        margin-left: 10px;
+    }
+
+
+    .cadre1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container {
+        flex-direction: row;
+        display: flex;
+        gap: 20px;
+    }
+    
+    .col {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+    }
+
+    .abon {
+        margin-left: 140px;
+    }
+
+    .form-floating {
+        width: 600px;
+    }
+
+    .responsive {
+        padding: 0 6px;
+     
+    }
+
+    div.gallery {
+        border: 1px solid #ccc;
+    }
+      
+    div.gallery:hover {
+        border: 1px solid #777;
+    
+    }
+      
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pub {
+          width: 90%;
+          height: 900px;
+    }
+
+    .photo {
+        width: 600px;
+        height: 400px;
+    }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  @media screen and (max-width:900px) and (min-width:768px){
+    #modifier{
+        width: 10%;   
+    }
+
+
+  }
+
+
+  @media screen and  (max-width:600px) {
+    .image {
+        width: 30%;
+        height: 40px;
+    }
+
+    #hom {
+        margin-right: 20px;
+        font-size: 20px;
+        color: black;
+    }
+
+    .avatar1 {
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-right: 25px;
+    }
+
+    .avatar2 {
+        vertical-align: middle;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+
+    .connexion{
+        width: 93%;
+    }
+
+    #modifier{
+        width:30%;
+    }
+
+    .gallery {
+        width:100%;
+        margin-left: 10px;
+    }
+
+  }
+  
+
+

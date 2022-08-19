@@ -1,0 +1,53 @@
+<%- include('./includes/header.ejs') %>
+    <section class="connexion">
+        <div class="page">
+          <div class="tete">
+           <a href="Home.html"><img src="icon-left-font.png" alt="png"></a>
+           <a href="Home.html" id="hom" class="fa fa-home fa-2x"></a>
+          </div>
+        <br>
+        <div>
+          <div class="mileu">
+            <div class="MN">
+                <a href=""><img src="Images/c-est-quoi-une-belle-femme-temoignages (1).jpeg" alt="jpg" id="femme"></a>
+                <div class="nom">
+                  <p> nom prenom</p>
+              </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+              
+            <br>
+            <br>
+            <div class="pub">
+                <div class="IM">
+                  <h6>Description</h6>
+                  <a href="post.html"><img  class="image1" src="Images/salon_de_the.jpg" alt="jpg" id="salon"></a>
+              </div>
+             <br>
+              <div class="ICO">
+                  <div><button onclick="clickCounter()" class="button" type="button"><i class="fa fa-thumbs-up"><p>j'aime</p></i></button></div>
+                  <div id="result"></div>
+                  <div><button onclick="discounter()" class="button" type="button"><i class="fa fa-thumbs-down"><p>je n'aime pas</p></i></button></div>
+                  <div id="result1"></div>
+              </div>  
+            </div>
+            <br>
+            <br>
+            <div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Mettre votre commentaire" autofocus>
+           </div>
+           <div>
+              <input type="submit" value="Publier" id="publier"/><br>
+          </div>
+          <div>
+            <br>
+            <p class="coor"> nom prenom </p>
+            <p class="comm"> commentaire</p>
+            <p id="d"></p><NOBR>
+              <p id="month"></p>
+              <p id="year"></p></NOBR>
+              <p id="time"> </p>
+          </div>
+        </section>
+</body>
+</html>

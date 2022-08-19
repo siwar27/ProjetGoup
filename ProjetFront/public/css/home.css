@@ -1,0 +1,424 @@
+*{box-sizing: border-box;}
+
+body{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    background-color: darkred;
+    margin:10% 0 0 0;
+
+
+}
+.page1{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-self: center;
+    align-items: center;
+    width: 50%;
+    height: 900px;
+    box-shadow: 15px;
+    background-color: white;
+    border:solid 1px #aea0a0;
+    box-shadow: 15px 15px 10px #161414;
+    border-radius:15px;
+
+}
+
+.page1 img{
+    width:250px;
+    align-self: center;
+    margin:45px 0 0 0 ;
+
+}
+input{
+    width:350px;
+    height: 30px;
+    border-radius: 5px;
+    width:100%;
+}
+
+
+#Se-connecter{
+    width:150px;
+    height: 35px;
+    color: rgb(0, 0, 0);
+    background-color:#FFD7D7;
+    align-self: center;
+    margin:25px 0 0 0;
+    border-radius: 5px;
+    border:solid 1px #FFD7D7;
+   font-weight: bold;
+}
+a{
+    align-self: center;
+    color:#FD2D01;
+    font-family: 'Lato';
+    margin-bottom: 20px;
+
+}
+
+.for{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+/* Parite SIWAR */ 
+
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.partie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.section{
+    width: 70%;
+}
+
+.menu{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.menu p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin:0 0 15px 0;
+}
+.menu input{
+    width:500px;
+}
+.icone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icone a{
+    color: black;
+    text-decoration: none;
+}
+.entete{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color:#EBE9E9;
+    border-radius: 5px;
+    width: 100%;
+}
+.storie{
+    display: flex;
+    flex-direction: column;
+    margin:0 5px 5px 5px;
+}
+.fa-ellipsis{
+     font-size: 25px;
+     margin: 15px 20px 0 0;
+}
+.fa-bookmark-o{
+    margin:5px 20px 0 0;
+
+}
+img{
+    border: 1px solid brown;
+    border-radius: 25px;
+    margin:10px 0 0 20px;
+    width: 50px;
+    height: 50px;
+}
+.partie1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section p{
+    font-size: 5px;
+}
+.mileu{
+    display:flex;
+    flex-direction: column;
+    background-color:#EBE9E9;
+    border-radius: 5px;
+    margin:10px 0 0 0;
+    width: 100%;
+}
+.MN{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 50px;
+}
+.image1{
+    width: 100%;
+    height: 200px;
+    border:none;
+    border-radius: 5px;
+    margin:0 0 0 0;
+    object-fit: cover;
+}
+.ICO{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+/*.ICO i {
+    font-size: 10px;
+    margin-left: 10px;
+}*/
+
+.icone1{
+    margin:5px 0 0 30px;
+}
+.commentaire{
+    font-size:10px;
+    color: darkgrey;
+    margin:10px 0 0 20px;
+}
+p{
+    margin:10px 0 0 20px;
+}
+.pied{
+    display: flex;
+    flex-direction: row;
+    margin:10px 0 10px 20px;
+}
+.com{
+    border: none;
+    background-color: #EBE9E9;
+    width: 50%;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.colone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sugg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sugg a{
+    color: grey;
+    font-size: 10px;
+    margin:10px 0 10px 0;
+}
+.aside a{
+    font-size: 10px;
+}
+.aside img{
+    width: 20px;
+    height: 20px;
+}
+.nom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.nom img{
+    width: 50px;
+    height: 50px;
+
+}
+.nom a{
+    font-size: 15px;
+    color :black;
+    text-decoration:none;
+}
+.nom1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.prenom{
+    color: black;
+    text-decoration: none;
+}
+
+.MN img{
+    width: 60px;
+    align-self: center;
+    margin-left: 30px;
+}
+
+/* fin parite Siwar */
+
+.partie1 {
+    width: 80%;
+}
+
+.IM {
+    width: 100%;
+    object-fit: cover;
+}
+
+#salon {
+    width: 100%;
+}
+
+.page {
+    width:90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h6 {
+    margin-left: 20px;
+}
+
+.nom p {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.fa fa-thumbs-up {
+    font-size: 100px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .fa:hover {
+    color: darkblue;
+  }
+ 
+  .fa:hover {
+    color: darkblue;
+  }
+
+  .button {
+    border: none;
+    color: black;
+    background-color: #EBE9E9;
+   
+  }
+
+  .ICO p{
+    margin-right: 3px;
+    margin-top: 10px;
+  }
+
+  #result {
+    margin-left : 30px;
+  }
+
+  #result1 {
+    margin-left: 30px;
+  }
+
+@media screen and (max-width:900px) and (min-width:768px) {
+
+    
+    .for{
+        padding-left: 15px;
+        width: 80%;
+
+    }
+    
+    .page1{
+        width: 50%;
+    }
+
+    input{
+        width: 100%;
+    }
+    
+
+    .page1 img{
+        
+        align-self: center;
+        margin:45px 20px 0 20px ;
+    
+    }
+    #salon {
+        width: 90%;
+    }
+    
+    .image1{
+        width: 100%;
+        height: 200px;
+        border:none;
+        border-radius: 5px;
+        margin:0 0 0 0;
+        object-fit: cover;
+    }
+}
+@media screen and  (max-width:600px) {
+
+
+    body{
+
+        margin:30% 0 0 0;
+    }
+
+    .page1{
+        width: 65%;
+        height: 900px;
+    }
+    .page1 img{
+        width: 100px;
+        margin: 35px 0 0 0;
+    }
+
+    .for{
+        width: 80%;
+    }
+    input{
+        width: 100%;
+        height: 25px;
+    }
+    #Se-connecter{
+        width: 105px;
+        height: 25px;
+        font-size: 11px;
+
+    }
+    a{
+        font-size: 12px;
+    }
+
+    .titre{
+        font-size: 12px;
+    }
+
+    .page1 img{
+        width:130px;
+        align-self: center;
+        margin:60px 0px 10px 30px ;
+    
+    }
+
+    .image1{
+        width: 100%;
+        height: 200px;
+        border:none;
+        border-radius: 5px;
+        margin:0 0 0 0;
+        object-fit: cover;
+    }
+
+    #salon {
+        width: 80%;
+    }
+
+    #femme {
+        width:50px;
+    }
+
+    
+}
+    
