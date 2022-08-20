@@ -2,6 +2,8 @@ const express = require('express');
 const userCtrl = require('../controleurs/userCtrl');
 const postCtrl = require('../controleurs/postCtrl');
 const likesCtrl = require('../controleurs/likesCtrl');
+const logCtrl = require('../controleurs/logCtrl');
+
 
 // Router
 exports.router = (function() {
@@ -27,9 +29,14 @@ apiRouter.route('/update').put(postCtrl.PutPublication);
 apiRouter.route('/getPublication/:id').get(postCtrl.getPost)
 apiRouter.route('/getAllPosts').get(postCtrl.getAllPosts)
 
+apiRouter.route('/loggedIn').get(logCtrl.loggedIn);
+
+
 //Likes Routes
 //apiRouter.route('/Likes/new/').post(likesCtrl.likePost);
 //apiRouter.route('/Likes/').get(likesCtrl.dislikePost);
 return apiRouter;
 
 })();
+
+

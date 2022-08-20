@@ -2,66 +2,27 @@ const fetch = require('node-fetch');
 const LocalStorage = require('node-localstorage').LocalStorage;
 
 var localStorage = new LocalStorage('./scratch');
-
-/*exports.addPost = async (req, res) => {
-    console.log('-------- toto -------', req.body); 
-    const data = {
-        texte : req.body.texte,
-    };
-    console.log('-------- data -------', data); 
-
-    fetch('http://localhost:3500/api/new', {
-      
-        // Adding method type
-        method: "POST",
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        // Adding body or contents to send
-        body: JSON.stringify(data),
-      
-    })
-    
-    //Converting to JSON
-    .then((res) => {  
-        return res.json() 
-    })
-    // Displaying results to console
-    .then(json => {
-        console.log(json)
-        if(!json.error)
-            res.redirect('/');
-        else  
-            res.render(json)
-    })
-}*/
+var jwtUtils = require('../../ProjetBack/jwtUtils');
 
 
 
 exports.addPost= async (req, res) => {
     console.log('----------body----',req.body)
-    // POST request using fetch()
-
     fetch("http://localhost:3500/api/new", {
-    // Adding method type
-    method: "POST",
+        
+        // Adding method type
+        method: "POST",
+        headers: {
+            // 'Authorization':  localStorage.getItem('token'),// Token à récupérer 
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+        // Adding body or contents to sen
+        body: JSON.stringify({
+            texte : req.body.texte,
+        }),
+    })
 
-    // Adding body or contents to send
-
-    body: JSON.stringify({
-        userId : 1,
-        texte : req.body.texte,
-
-    }),
-
-    // Adding headers to the request
-
-    headers: {
-        "Content-type": "application/json; charset=UTF-8"
-    }
-
-})
 // Converting to JSON
 .then(response => response.json())
 // Displaying results to console
@@ -72,3 +33,42 @@ exports.addPost= async (req, res) => {
 //res.redirect('/login')
 
 }
+
+exports.getUserByToken = async (req, res, next) => {
+
+    console.log('jy suis ');
+    
+    // const response = await fetch('http://localhost:3500/api/me',{
+    //     headers: {
+    //         'Authorization':  localStorage.getItem('token')// Token à récupérer 
+    //     }
+    //  });
+    // const myJson = await response.json();
+    // req.user = myJson;
+    // console.log('User Info', req.user);
+    // return next();
+    
+}
+
+/*
+exports.getUserById = async (req, res) => {
+    
+       fetch('http://localhost:3500/api/me',{
+
+    method:'GET',
+
+    headers: {
+        "Content-type": "application/json; charset=UTF-8"
+    })
+
+    .then(response => response.json())
+    // Displaying results to console
+    .then(json => {
+        console.log(json)
+        if(req.headers['authorization'])
+            res.redirect('/');
+        else  
+            next();
+    })
+    
+}*/

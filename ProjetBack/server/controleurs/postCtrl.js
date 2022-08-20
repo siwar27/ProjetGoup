@@ -13,28 +13,23 @@ const ITEMS_LIMIT   = 50;
 module.exports = {
   CreatePublication: (req, res) => {
   // Getting auth header
-
-   
   var headerAuth   = req.headers['authorization'];
-
+  console.log('-------HEADER--------', req.user)
   //decrypt token and get user id
   var userId  = jwtUtils.getUserId(headerAuth);
- 
    
 console.log('---------------', userId)
   // Params
   //var idComment   = req.body.idCommentaire;
   var texte = req.body.texte;
   
- 
-
   asyncLib.waterfall([
     
     (done) => {
         models.Publication.create({
           texte: texte,
           //Attachement:Attachement,
-          userId : req.body.userId,
+          userId : userId,
 
         })
         .then((newPublication) => {

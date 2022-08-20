@@ -35,6 +35,7 @@ module.exports = {
             }
             catch(err) { }
         }   
+        console.log('---------- USER ID ------JWT ', userId);
         return userId;
     }
 }

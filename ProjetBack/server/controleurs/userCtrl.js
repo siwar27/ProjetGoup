@@ -171,10 +171,14 @@ module.exports = {
             }
           ], 
           (userFound) => {
+            
             if (userFound) {
-              let token = jwtUtils.generateTokenForUser(userFound);
-              console.log(token);  
+            
+            let token = jwtUtils.generateTokenForUser(userFound);
+              console.log('TOKEN LOGINN ', token);  
+              console.log('TOKEN LOGINN ', userFound);  
               req.user = userFound.dataValues;
+              console.log('ggggggggg  REQ.USER ggggggggggg', req.user)
               //res.render('connexion',{successMessage:'WELCOME HOME !'}, res.redirect('/'));
               return res.status(201).json({ 'successMessage': 'WELCOME', 'token': token });
             } 
@@ -190,6 +194,7 @@ module.exports = {
           //let headerAuth = req.cookies.auth;
           let headerAuth = req.headers['authorization'];
           let userId = jwtUtils.getUserId(headerAuth)
+          console.log('kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk',userId);
 
           if(userId < 0) {
             return res.status(400).json({'error':'An error occured mauvais token'})

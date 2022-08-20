@@ -1,6 +1,9 @@
 const express = require('express');
-const { logUser } = require('../controleurs/userCtrlFront');
+const LocalStorage = require('node-localstorage').LocalStorage;
+var localStorage = new LocalStorage('./scratch');
 const route = express.Router();
+
+const { logUser } = require('../controleurs/userCtrlFront');
 const userCtrlFront = require('../controleurs/userCtrlFront');
 const postCtrlFront = require('../controleurs/postCtrlFront');
 
@@ -16,10 +19,16 @@ res.render('../views/register')
 route.post('/register', userCtrlFront.addUser);
 
 //HOME
-route.get('/', (req,res) => {res.render('../views/home')});
+route.get('/', (req,res) => {
+    if(localStorage.getItem('token'))
+        res.render('../views/home')
+    else
+        res.redirect('/login')
+});
 route.post('/new', postCtrlFront.addPost);
 
 //POST
+route.get('/logout', userCtrlFront.logOut);
 
 module.exports = route;
 
